@@ -1,0 +1,23 @@
+digraph {
+graph [];
+edge [fontsize=18, arrowhead=vee, arrowsize=0.5];
+"1" [label=" main \n67%, 1" fontcolor=black, style=filled, fontsize=22];
+"6" [label=" initVec \n11%, 2" fontcolor=black, style=filled, fontsize=22];
+"7" [label=" sumVecs \n10%, 1" fontcolor=black, style=filled, fontsize=22];
+"8" [label=" diffVecs \n10%, 1" fontcolor=black, style=filled, fontsize=22];
+"2" [label=" Obj2 \n3.9 KiB" fontcolor=black, shape=box, fontsize=22];
+"3" [label=" Obj3 \n3.9 KiB" fontcolor=black, shape=box, fontsize=22];
+"4" [label=" Obj4 \n3.9 KiB" fontcolor=black, shape=box, fontsize=22];
+"5" [label=" Obj5 \n3.9 KiB" fontcolor=black, shape=box, fontsize=22];
+"1"->"1"[ label="3.6 KiB" color = "#f60a00"]
+"2"->"7"[ label="3.9 KiB" color = "#ff0100"]
+"2"->"8"[ label="3.9 KiB" color = "#ff0100"]
+"3"->"7"[ label="3.9 KiB" color = "#ff0100"]
+"3"->"8"[ label="3.9 KiB" color = "#ff0100"]
+"4"->"1"[ label="4 B" color = "#00aaff"]
+"5"->"1"[ label="4 B" color = "#00aaff"]
+"6"->"2"[ label="3.9 KiB" color = "#ff0100"]
+"6"->"3"[ label="3.9 KiB" color = "#ff0100"]
+"7"->"4"[ label="3.9 KiB" color = "#ff0100"]
+"8"->"5"[ label="3.9 KiB" color = "#ff0100"]
+}
