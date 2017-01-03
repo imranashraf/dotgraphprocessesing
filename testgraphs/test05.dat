@@ -1,0 +1,21 @@
+# nodes
+f 1 main 71563 1
+o 2 Obj2 4000
+o 3 Obj3 4000
+o 4 Obj4 4000
+o 5 Obj5 4000
+f 6 initVec 12008 2
+f 7 sumVecs 11003 1
+f 8 diffVecs 11003 1
+# edges
+e 1 1 3734
+e 2 7 4000
+e 2 8 4000
+e 3 7 4000
+e 3 8 4000
+e 4 1 4
+e 5 1 4
+e 6 2 4000
+e 6 3 4000
+e 7 4 4000
+e 8 5 4000
