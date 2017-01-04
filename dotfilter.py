@@ -172,13 +172,14 @@ if __name__ == "__main__":
     try:
         # Pharsing args one by one
         scriptName = sys.argv[0]
+        scriptpath =  os.path.realpath(__file__)
         fin = sys.argv[1]
         nthresh = float( sys.argv[2] )
         ethresh = float( sys.argv[3] )
     except IndexError:
         print("Input file name not specified as input")
-        print('  Usage: MCPROF_ROOT/scripts/{} <mcprof graph file.dat> <%age node thresh> <%age edge thresh>'.format(scriptName) )
-        print('  For example: MCPROF_ROOT/scripts/{} "testgraphs/test07.dat" 0.01 0.0001'.format(scriptName) )
+        print('  Usage: {} <mcprof graph file.dat> <%age node thresh> <%age edge thresh>'.format(scriptpath) )
+        print('  For example: {} testgraphs/test07.dat 0.01 0.0001'.format(scriptpath) )
         sys.exit(0)
 
     print('Processing graph in {0} file with node threshold {1} and edge threshold {2}'.format(str(fin), nthresh, ethresh) )
